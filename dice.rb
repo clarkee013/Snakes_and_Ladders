@@ -8,6 +8,8 @@ class Dice
     return "we are using a #{@face_number} dice!"
   end
 
-
+  def dice_roll
+    return rand(1..6)
+  end
 
 end # END of CLASS

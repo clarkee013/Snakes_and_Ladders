@@ -6,7 +6,7 @@ require_relative '../ladder'
 class TestLadder < MiniTest::Test
   def setup()
       @all_ladders = []
-      @ladder1 = Ladder.new()
+      @ladder1 = Ladder.new({start: 3, end: 14})
     end
 
     def test_where_top_of_ladder_is

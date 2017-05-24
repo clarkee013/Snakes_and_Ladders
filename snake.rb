@@ -13,4 +13,11 @@ class Snake
     return @snake[:end]
   end
 
+  def for_landing_on_snake(token_position)
+    if token_position == @snake[:start]
+      token_position == @snake[:end]
+    return token_position
+  end
+  end
+
 end # END of CLASS

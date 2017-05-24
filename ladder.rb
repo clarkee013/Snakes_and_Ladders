@@ -1,15 +1,15 @@
 class Ladder
 
-    def initialize()
-      @ladder1 = {start: 3, end: 14}
+    def initialize(ladder)
+      @ladder = ladder
     end
 
     def get_ladder_top
-      return @ladder1[:end]
+      return @ladder[:end]
     end
 
     def get_ladder_bottom
-      return @ladder1[:start]
+      return @ladder[:start]
     end
 
   end # END of CLASS

@@ -17,4 +17,7 @@ class TestSnake < MiniTest::Test
     assert_equal(2, @snake1.get_snake_tail)
   end
 
+  
+
+
 end # END of CLASS
