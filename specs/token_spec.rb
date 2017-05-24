@@ -20,5 +20,21 @@ class TestToken < MiniTest::Test
     assert_equal(0, @T1.position())
   end
 
+  def test_token_moved
+    @T1.move_token(5)
+    assert_equal(5, @T1.position())
+    @T1.move_token(5)
+    assert_equal(10, @T1.position())
+  end
+
+  def test_multi_tokens_moved
+    @T1.move_token(2)
+    @T2.move_token(5)
+    assert_equal(2, @T1.position())
+    assert_equal(5, @T2.position())
+  end
+
+
+
 
 end # END of CLASS

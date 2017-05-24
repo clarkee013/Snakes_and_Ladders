@@ -12,4 +12,9 @@ class Token
   def position()
     return @position
   end
+
+  def move_token(add_number)
+    @position += add_number
+  end
+
 end # END of CLASS

@@ -12,4 +12,4 @@ class Board
 
 end # END of CLASS
 
-Board.board_size[ Token.position ]
+# Board.board_size[ Token.position ]
