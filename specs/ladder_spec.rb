@@ -5,7 +5,16 @@ require_relative '../ladder'
 
 class TestLadder < MiniTest::Test
   def setup()
-    
-  end
+      @all_ladders = []
+      @ladder1 = Ladder.new()
+    end
 
-end # END of CLASS
+    def test_where_top_of_ladder_is
+      assert_equal(14, @ladder1.get_ladder_top)
+    end
+
+    def test_where_bottom_of_ladder_is
+      assert_equal(3, @ladder1.get_ladder_bottom)
+    end
+
+  end # END of CLASS
